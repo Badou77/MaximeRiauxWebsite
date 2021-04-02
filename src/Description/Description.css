@@ -1,0 +1,22 @@
+#description {
+    background: black;
+    -webkit-text-fill-color: white;
+}
+
+#descriptionTitle {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.imageCol {
+    width: 50%;
+    background: green;
+}
+
+.textCol {
+    flex-grow: 1;
+    background: blue;
+}
