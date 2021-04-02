@@ -4,11 +4,19 @@ import './index.css';
 import Banner from './Banner/Banner';
 import reportWebVitals from './reportWebVitals';
 import Description from "./Description/Description";
+import Skills from "./Skills/Skills";
+import Realisations from "./Realisations/Realisations";
+import Videos from "./Videos/Videos";
+import Contact from "./Contact/Contact";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Banner/>
-        <Description/>
+            <Banner/>
+            <Description/>
+            <Skills/>
+            <Realisations/>
+            <Videos/>
+            <Contact/>
     </React.StrictMode>,
     document.getElementById('root')
 );
