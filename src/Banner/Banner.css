@@ -1,6 +1,7 @@
 #banner {
     text-align: center;
     background: aqua;
+    display: flow-root;
 }
 
 .linkButton {

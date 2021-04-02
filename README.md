@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React Banner](https://github.com/face
 
 In the project directory, you can run:
 
+### yarn install / npm install
+
+Installs all packages needed to build and start the web app
+
 ### `yarn start`
 
 Runs the app in the development mode.\
