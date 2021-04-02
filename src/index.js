@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import Banner from './Banner/Banner';
 import reportWebVitals from './reportWebVitals';
 import Description from "./Description/Description";
@@ -8,15 +9,17 @@ import Skills from "./Skills/Skills";
 import Realisations from "./Realisations/Realisations";
 import Videos from "./Videos/Videos";
 import Contact from "./Contact/Contact";
+import CustomNavbar from "./CustomNavbar";
 
 ReactDOM.render(
     <React.StrictMode>
-            <Banner/>
-            <Description/>
-            <Skills/>
-            <Realisations/>
-            <Videos/>
-            <Contact/>
+        <CustomNavbar/>
+        <Banner/>
+        <Description/>
+        <Skills/>
+        <Realisations/>
+        <Videos/>
+        <Contact/>
     </React.StrictMode>,
     document.getElementById('root')
 );
