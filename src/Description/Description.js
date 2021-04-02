@@ -7,10 +7,25 @@ function Description() {
 
             <div className="container">
                 <div className="imageCol">
-                    Left Div
+                    <img
+                        alt="Maxime Riaux"
+                        src={process.env.PUBLIC_URL + '/maximeProfilePicture.webp'}
+                        className="profilePic"
+                    />
                 </div>
+
                 <div className="textCol">
-                    Right Div
+                    <div>
+                        <p>
+                            Bienvenue ! Technicien Son diplômé basé à Rennes, j'ai étudié à l'ESRA Bretagne de 2015 à
+                            2018 et suis depuis technicien son et compositeur freelance. Passionné, je travaille le son
+                            sous toutes ses formes et maîtrise l’ensemble de la chaîne de production : prise de son,
+                            montage, mixage et sound design.
+                            <br/><br/>
+                            A travers ce site, je vous invite à découvrir mes réalisations, professionnelles comme
+                            personnelles, à l'image des compétences que je vous propose pour l'audiovisuel.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

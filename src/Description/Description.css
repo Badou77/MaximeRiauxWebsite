@@ -8,15 +8,25 @@
 }
 
 .container {
-    display: flex;
+    display: inline-flex;
 }
 
 .imageCol {
-    width: 50%;
-    background: green;
+    padding: 1em;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.imageCol img {
+    min-width: 200px;
 }
 
 .textCol {
-    flex-grow: 1;
-    background: blue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }

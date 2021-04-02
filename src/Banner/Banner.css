@@ -16,7 +16,7 @@
 
     text-decoration: none;
 
-    display: -moz-inline-box;
+    display: inline-block;
 }
 
 .linkIcons {
