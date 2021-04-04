@@ -61,7 +61,7 @@ function Description() {
     })
 
     return (
-        <section id="skillsWrapper" className="fpage">
+        <section id="competences" className="fpage">
             <h2 className="sectionTitle">Compétences</h2>
 
             <div className="centerDiv">{skillsList}</div>
