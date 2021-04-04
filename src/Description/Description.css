@@ -1,6 +1,7 @@
 #description {
     background: black;
     -webkit-text-fill-color: white;
+    display: grid;
 }
 
 .container {
