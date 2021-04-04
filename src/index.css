@@ -3,8 +3,15 @@
   padding: 0;
 }
 
+section {
+  height: 100vh;
+}
+
 .sectionTitle {
   text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: xx-large;
 }
 
 body {

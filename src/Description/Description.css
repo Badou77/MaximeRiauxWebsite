@@ -3,10 +3,6 @@
     -webkit-text-fill-color: white;
 }
 
-#descriptionTitle {
-    text-align: center;
-}
-
 .container {
     display: inline-flex;
 }

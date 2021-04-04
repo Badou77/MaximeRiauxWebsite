@@ -22,9 +22,13 @@ function Description({iconURL, title, description, descriptionList}) {
         </div>
 
         <div className="skillDescription">
-            <h3>{title}</h3>
+            <h2 className="skillTitle">{title}</h2>
+            <hr align="center"/>
             <p>
-                {description}
+                <strong>
+                    {description}
+                </strong>
+                <br/><br/>
                 {list}
             </p>
         </div>

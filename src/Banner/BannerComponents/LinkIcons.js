@@ -1,3 +1,5 @@
+import "./linkIcons.css"
+
 function LinkIcons() {
     return (
         <ul className="linkIcons">

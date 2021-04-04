@@ -1,3 +1,28 @@
 #specificSkill {
-    display: flex;
+    display: inline-flex;
+    width: 30em;
+    text-align: start;
+    margin: 2em 1em;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+}
+
+.skillTitle {
+    text-align: center;
+}
+
+ul {
+    list-style: "-";
+    text-indent: 6px;
+}
+
+ul > li {
+    padding-block-end: 0.5em;
+}
+
+.skillIconWrapper {
+    margin-right: 6px;
 }

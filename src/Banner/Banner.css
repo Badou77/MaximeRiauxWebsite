@@ -1,7 +1,20 @@
 #banner {
     text-align: center;
     background: aqua;
-    display: flow-root;
+    display: grid;
+}
+
+.topSection {
+    margin-block-start: 5em;
+}
+
+.lowerSection {
+    align-self: flex-end;
+    margin-block-end: 5em;
+}
+
+#bannerTitle {
+    font-size: xxx-large;
 }
 
 .linkButton {

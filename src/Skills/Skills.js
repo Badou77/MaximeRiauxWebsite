@@ -21,28 +21,50 @@ function Description() {
         "Plugins : iZotope, Fab Filter, Valhalla.",
         "Microphones & enregistreurs : Zoom H6, Rode NTG3, Neumann Km184 mt."]
 
+
+    const postProduction = {
+        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        title: "Post-Production",
+        description: postProductionDescription,
+        descriptionList: postProductionDescriptionList
+    };
+
+    const priseDeSon = {
+        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        title: "Prise de son",
+        description: priseDeSonDescription,
+        descriptionList: priseDeSonDescriptionList
+    };
+
+    const soundDesign = {
+        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        title: "Sound-Design",
+        description: soundDesignDescription,
+        descriptionList: soundDesignDescriptionList
+    };
+
+    const materiel = {
+        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        title: "Matériel",
+        description: materielDescription,
+        descriptionList: undefined
+    };
+
+
+    const skills = [postProduction, priseDeSon, soundDesign, materiel];
+
+    const skillsList = skills.map((skill) => {
+        return <SpecificSkill iconURL={skill.iconURL}
+                              title={skill.title}
+                              description={postProductionDescription}
+                              descriptionList={postProductionDescriptionList}/>
+    })
+
     return (
         <section id="skillsWrapper" className="fpage">
-            <h2 id="descriptionTitle">Compétences</h2>
+            <h2 className="sectionTitle">Compétences</h2>
 
-            <SpecificSkill iconURL={process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp'}
-                           title="Post-Production"
-                           description={postProductionDescription}
-                           descriptionList={postProductionDescriptionList}/>
-
-            <SpecificSkill iconURL={process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp'}
-                           title="Prise de son"
-                           description={priseDeSonDescription}
-                           descriptionList={priseDeSonDescriptionList}/>
-            <SpecificSkill iconURL={process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp'}
-                           title="Sound-Design"
-                           description={soundDesignDescription}
-                           descriptionList={soundDesignDescriptionList}/>
-
-            <SpecificSkill iconURL={process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp'}
-                           title="Matériel"
-                           descriptionList={materielDescription}/>
-
+            <div className="centerDiv">{skillsList}</div>
         </section>
     );
 }
