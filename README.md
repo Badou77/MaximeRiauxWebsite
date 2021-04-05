@@ -1,7 +1,7 @@
 # Getting Started with Create React Banner
 
 This project was bootstrapped with [Create React Banner](https://github.com/facebook/create-react-app).
-
+  
 ## Available Scripts
 
 In the project directory, you can run:
