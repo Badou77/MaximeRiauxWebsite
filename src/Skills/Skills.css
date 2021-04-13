@@ -2,5 +2,8 @@
     background: cornflowerblue;
     -webkit-text-fill-color: white;
     text-align: center;
-    display: grid;
+}
+
+.centerDiv {
+    max-width: 100vw;
 }

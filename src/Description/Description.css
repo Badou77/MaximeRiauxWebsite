@@ -1,11 +1,15 @@
 #description {
     background: black;
     -webkit-text-fill-color: white;
-    display: grid;
 }
 
 .container {
     display: inline-flex;
+    max-width: 100vw;
+}
+
+.innerContainer {
+    width: 100%;
 }
 
 .imageCol {
@@ -17,8 +21,20 @@
     flex-direction: column;
 }
 
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .imageCol,
+    .textCol {
+        width: 100%;
+    }
+}
+
 .imageCol img {
-    min-width: 200px;
+    /*min-width: 200px;*/
 }
 
 .textCol {
