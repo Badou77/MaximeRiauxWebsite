@@ -1,4 +1,10 @@
 #contact {
     background: black;
     -webkit-text-fill-color: white;
+    min-height: auto;
+    height: fit-content;
+}
+
+.formWrapper {
+    margin: 5em;
 }
