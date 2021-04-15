@@ -2,4 +2,12 @@
     background: #6b016b;
     -webkit-text-fill-color: white;
     display: flow-root;
+    min-height: auto;
+    height: fit-content;
+}
+
+.centeredPlayer {
+    text-align: center !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
