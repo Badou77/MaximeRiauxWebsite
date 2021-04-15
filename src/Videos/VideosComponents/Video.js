@@ -10,7 +10,7 @@ function Video({videoId, description, title}) {
             <div className="embed-responsive embed-responsive-16by9">
                 <iframe
                     src={url}
-                    title="YouTube video"
+                    title={title}
                     allowFullScreen
                 />
             </div>
