@@ -5,6 +5,14 @@
 
 #bannerTitle {
     font-size: xxx-large;
+    font-weight: bold;
+    color: #fff;
+}
+
+#bannerText {
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
 }
 
 .linkButton {

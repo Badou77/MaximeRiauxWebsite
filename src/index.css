@@ -3,6 +3,7 @@
     padding: 0;
 
     font-size: large;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 section {
@@ -35,10 +36,10 @@ code {
 }
 
 .topSection {
-    margin-block-start: 5em;
+    margin-block-start: 6em;
 }
 
 .lowerSection {
     align-self: flex-end;
-    margin-block-end: 5em;
+    margin-block-end: 6em;
 }

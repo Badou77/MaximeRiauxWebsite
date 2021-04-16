@@ -11,7 +11,7 @@ function Banner() {
         }}>
             <div className="bannerText topSection">
                 <h1 id="bannerTitle">Maxime Riaux</h1>
-                <span>Montage, Mixage, Design sonore, Prise de son</span>
+                <span id="bannerText">Montage, Mixage, Design sonore, Prise de son</span>
             </div>
 
             <div className="lowerSection">

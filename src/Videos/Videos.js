@@ -25,7 +25,7 @@ class Videos extends React.Component {
             <section id="videos" className="fpage">
                 <div className="row video-list">
                     {this.state.videosFromPlaylist.map(video => (
-                        <div className="col-lg-2 mb-4 mb-lg-0">
+                        <div className="col-lg-3 mb-4 mb-lg-0">
                             <div
                                 className="bg-image hover-overlay ripple shadow-1-strong rounded"
                                 data-ripple-color="light"
