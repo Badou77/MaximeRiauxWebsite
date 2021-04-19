@@ -4,6 +4,7 @@
 
     font-size: large;
     font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
