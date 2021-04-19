@@ -1,5 +1,6 @@
 #realisations {
-    background: #6b016b;
+    /*background: #6b016b;*/
+    background: repeating-linear-gradient(45deg, #6b016b, #6b016b 10px, #000000 10px, #4e004e 100px);
     -webkit-text-fill-color: white;
     display: flow-root;
     min-height: auto;
