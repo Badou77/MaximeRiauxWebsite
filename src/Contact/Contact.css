@@ -1,5 +1,5 @@
 #contact {
-    background: black;
+    background: #052026c7;
     -webkit-text-fill-color: white;
     min-height: auto;
     height: fit-content;
@@ -7,4 +7,15 @@
 
 .formWrapper {
     margin: 5em;
+
+    justify-self: center;
+    min-width: 400px;
+    max-width: 1000px;
+}
+
+@media (max-width: 767px) {
+    .formWrapper {
+        margin: 1em;
+        min-width: 300px;
+    }
 }
