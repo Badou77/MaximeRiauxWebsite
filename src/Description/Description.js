@@ -16,9 +16,13 @@ function Description() {
 
                 <div className="textCol">
                     <div>
+                        <h3>Bienvenue !</h3>
+                        <br/>
                         <p>
-                            Bienvenue ! Technicien Son diplômé basé à Rennes, j'ai étudié à l'ESRA Bretagne de 2015 à
-                            2018 et suis depuis technicien son et compositeur freelance. Passionné, je travaille le son
+                            Technicien Son diplômé basé à Rennes, j'ai étudié à l'ESRA Bretagne de 2015 à
+                            2018 et suis depuis technicien son et compositeur freelance.
+                            <br/><br/>
+                            Passionné, je travaille le son
                             sous toutes ses formes et maîtrise l’ensemble de la chaîne de production : prise de son,
                             montage, mixage et sound design.
                             <br/><br/>

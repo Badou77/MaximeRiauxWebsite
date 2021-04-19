@@ -1,8 +1,9 @@
 import {Nav, Navbar} from "react-bootstrap";
+import "./CustomNavbar.css"
 
 function CustomNavbar() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+        <Navbar collapseOnSelect expand="lg" variant="dark" sticky="top" className="color-nav">
             <Navbar.Brand href="#banner">Maxime Riaux</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
