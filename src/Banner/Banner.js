@@ -15,7 +15,7 @@ function Banner() {
             </div>
 
             <div className="lowerSection">
-                <a className="linkButton" href="https://www.google.com">Me Contacter</a>
+                <a className="linkButton" href={"#contact"}>Me Contacter</a>
                 <LinkIcons/>
             </div>
         </section>

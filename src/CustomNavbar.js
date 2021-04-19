@@ -3,7 +3,7 @@ import {Nav, Navbar} from "react-bootstrap";
 function CustomNavbar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-            <Navbar.Brand href="#home">Maxime Riaux</Navbar.Brand>
+            <Navbar.Brand href="#banner">Maxime Riaux</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
