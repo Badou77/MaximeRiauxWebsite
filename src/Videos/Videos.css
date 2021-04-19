@@ -1,5 +1,5 @@
 #videos {
-    background: black;
+    background: #6b016b;
     -webkit-text-fill-color: white;
     height: fit-content;
     min-height: auto;
@@ -25,4 +25,14 @@
 .video-list {
     margin-top: 5em;
     margin-bottom: 5em;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.video-card-list-component {
+    margin-bottom: 2rem !important;
+}
+
+.fill-available {
+    height: 100%;
 }

@@ -2,7 +2,17 @@
     font-size: smaller;
 }
 
+.video {
+    border-radius: .25rem;
+}
+
 .videoText {
     padding-left: 10px;
     padding-right: 10px;
+    fill: black;
+    -webkit-text-fill-color: black;
+}
+
+.card {
+    height: 100%;
 }

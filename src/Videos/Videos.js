@@ -23,11 +23,11 @@ class Videos extends React.Component {
     render() {
         return (
             <section id="videos" className="fpage">
-                <div className="row video-list">
+                <div className="video-list">
                     {this.state.videosFromPlaylist.map(video => (
-                        <div className="col-lg-3 mb-4 mb-lg-0">
+                        <div className="col-lg-3 mb-4 mb-lg-0 video-card-list-component">
                             <div
-                                className="bg-image hover-overlay ripple shadow-1-strong rounded"
+                                className="fill-available"
                                 data-ripple-color="light"
                             >
                                 <Video key={video.id}
