@@ -26,10 +26,34 @@ const responsive = {
     }
 };
 
+
 class Videos extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.handler = this.handler.bind(this)
+        this.getMainVideo = this.getMainVideo.bind(this)
+    }
+
+
     state = {
         videosFromPlaylist: [],
         mainVideo: {}
+    }
+
+    getMainVideo() {
+        const clickedVideo = this.state.videosFromPlaylist.filter(video => video.id === this.state.mainVideo);
+
+        if (clickedVideo && clickedVideo[0]) {
+            return (<MainVideo key="MainVideo"
+                               videoId={clickedVideo[0].id}
+                               description={clickedVideo[0].description}
+                               title={clickedVideo[0].title}/>);
+        }
+    }
+
+    handler(videoId) {
+        this.setState({mainVideo: videoId});
     }
 
     componentDidMount() {
@@ -46,7 +70,7 @@ class Videos extends React.Component {
             }))
             .then(videos => {
                 this.setState({videosFromPlaylist: videos});
-                this.setState({mainVideo: videos[0]});
+                this.setState({mainVideo: videos[0].id});
             });
     }
 
@@ -56,12 +80,7 @@ class Videos extends React.Component {
                 <div className="ecommerce-video-gallery" data-mdb-zoom-effect="true" data-mdb-auto-height="true">
                     <div className="row py-3 shadow-5 justify-content-center">
                         <div className="col-12 mb-1">
-                            <div className="lightbox">
-                                <MainVideo key="MainVideo"
-                                           videoId={this.state.mainVideo.id}
-                                           description={this.state.mainVideo.description}
-                                           title={this.state.mainVideo.title}/>
-                            </div>
+                            {this.getMainVideo()}
                         </div>
                     </div>
                     <Carousel responsive={responsive} className="video-list">
@@ -74,7 +93,8 @@ class Videos extends React.Component {
                                            videoId={video.id}
                                            description={video.description}
                                            title={video.title}
-                                           image={video.image}/>
+                                           image={video.image}
+                                           handler={this.handler}/>
                             </div>
                         ))}
                     </Carousel>
