@@ -35,7 +35,6 @@ class Videos extends React.Component {
         this.getMainVideo = this.getMainVideo.bind(this)
     }
 
-
     state = {
         videosFromPlaylist: [],
         mainVideo: {}
