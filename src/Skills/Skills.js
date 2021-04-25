@@ -23,21 +23,21 @@ function Description() {
 
 
     const postProduction = {
-        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        iconURL: process.env.PUBLIC_URL + '/iconSkills/barre-de-son.png',
         title: "Post-Production",
         description: postProductionDescription,
         descriptionList: postProductionDescriptionList
     };
 
     const priseDeSon = {
-        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        iconURL: process.env.PUBLIC_URL + '/iconSkills/ecouteurs.png',
         title: "Prise de son",
         description: priseDeSonDescription,
         descriptionList: priseDeSonDescriptionList
     };
 
     const soundDesign = {
-        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+        iconURL: process.env.PUBLIC_URL + '/iconSkills/du-son.png',
         title: "Sound-Design",
         description: soundDesignDescription,
         descriptionList: soundDesignDescriptionList

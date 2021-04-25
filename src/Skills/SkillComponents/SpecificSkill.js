@@ -18,7 +18,8 @@ function Description({iconURL, title, description, descriptionList}) {
         <div className="skillIconWrapper">
             <img
                 alt="Compétence"
-                src={iconURL}/>
+                src={iconURL}
+                className="skillImage"/>
         </div>
 
         <div className="skillDescription">
