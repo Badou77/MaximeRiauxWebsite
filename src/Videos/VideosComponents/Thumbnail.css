@@ -6,6 +6,10 @@
     border-radius: .25rem;
 }
 
+.videoThumbnail {
+    width: 100%;
+}
+
 .videoText {
     padding-left: 10px;
     padding-right: 10px;
@@ -15,4 +19,5 @@
 
 .card {
     height: 100%;
+    margin: 1rem;
 }

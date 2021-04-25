@@ -1,5 +1,7 @@
 #description {
-    background: #052026c7;
+    /*background: #052026c7;*/
+    background: radial-gradient(ellipse at top, #052026c7, transparent),
+    radial-gradient(ellipse at bottom, #4e004e, transparent);;
     -webkit-text-fill-color: white;
     grid-template-rows: auto auto 1fr 1fr 1fr auto auto;
     min-height: 100vh;
