@@ -20,11 +20,12 @@
 
 .row {
     max-width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .video-list {
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     flex-wrap: wrap;
     display: flex;
 }
@@ -35,4 +36,11 @@
 
 .fill-available {
     height: 100%;
+}
+
+.ecommerce-video-gallery {
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    justify-self: center;
 }
