@@ -16,10 +16,10 @@ function Description() {
     const soundDesignDescriptionList = ["Sound Design : Constitution d'une banque de sons personnalisée, en fonction de la charte musicale et univers de votre projet. Captations d'ambiances réelles, synthèse sonore...",
         "Intégration audio : Au moyen de logiciels type Wwise, Fmod..."]
 
-    const materielDescription = ["Périphériques & moniteurs : Scarlett 2i2, Yamaha HS7, DT 770 Pro, iCon Platform M+.",
-        "Softwares : Avid Pro Tools 12, Logic Pro X, Audiokinetic Wwise, FMOD.",
-        "Plugins : iZotope, Fab Filter, Valhalla.",
-        "Microphones & enregistreurs : Zoom H6, Rode NTG3, Neumann Km184 mt."]
+    // const materielDescription = ["Périphériques & moniteurs : Scarlett 2i2, Yamaha HS7, DT 770 Pro, iCon Platform M+.",
+    //     "Softwares : Avid Pro Tools 12, Logic Pro X, Audiokinetic Wwise, FMOD.",
+    //     "Plugins : iZotope, Fab Filter, Valhalla.",
+    //     "Microphones & enregistreurs : Zoom H6, Rode NTG3, Neumann Km184 mt."]
 
 
     const postProduction = {
@@ -43,15 +43,15 @@ function Description() {
         descriptionList: soundDesignDescriptionList
     };
 
-    const materiel = {
-        iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
-        title: "Matériel",
-        description: materielDescription,
-        descriptionList: undefined
-    };
+    // const materiel = {
+    //     iconURL: process.env.PUBLIC_URL + '/linkIcons/soundCloudWhiteIcon.webp',
+    //     title: "Matériel",
+    //     description: materielDescription,
+    //     descriptionList: undefined
+    // };
 
 
-    const skills = [postProduction, priseDeSon, soundDesign, materiel];
+    const skills = [postProduction, priseDeSon, soundDesign];
 
     const skillsList = skills.map((skill) => {
         return <SpecificSkill iconURL={skill.iconURL}
