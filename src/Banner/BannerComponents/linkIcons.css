@@ -14,5 +14,5 @@
 .reversedImage {
     transform: rotateX(180deg);
     margin-top: 2px;
-    opacity: 30%;
+    opacity: .3;
 }
