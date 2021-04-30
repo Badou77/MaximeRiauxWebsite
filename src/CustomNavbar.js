@@ -10,7 +10,7 @@ function CustomNavbar() {
                 <Nav className="mr-auto">
                     <Nav.Link href="#description">A Propos</Nav.Link>
                     <Nav.Link href="#competences">Compétences</Nav.Link>
-                    <Nav.Link href="#realisations">Réalisations</Nav.Link>
+                    <Nav.Link href="#sound-records">Réalisations</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

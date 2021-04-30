@@ -44,3 +44,35 @@ code {
     align-self: flex-end;
     margin-block-end: 6em;
 }
+
+.leftSkewedSeparator {
+    transform: skew(
+            360deg,
+            354deg
+    );
+    z-index: 10;
+    position: relative;
+    height: 10em;
+}
+
+.rightSkewedSeparator {
+    transform: skew(
+            360deg,
+            6deg
+    );
+    z-index: 10;
+    position: relative;
+    height: 10em;
+}
+
+.blueSection {
+    background: #4f80d8;
+}
+
+.purpleSection {
+    background: radial-gradient(ellipse at top, #432769, transparent);;
+}
+
+.darkSection {
+    background: #052026c7;
+}

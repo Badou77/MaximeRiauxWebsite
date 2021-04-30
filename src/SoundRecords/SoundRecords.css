@@ -13,3 +13,9 @@
     -webkit-text-fill-color: aliceblue;
     margin-bottom: 2rem;
 }
+
+.centeredPlayer {
+    text-align: center !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

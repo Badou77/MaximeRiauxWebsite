@@ -16,10 +16,13 @@ ReactDOM.render(
             <CustomNavbar/>
             <Banner/>
             <Description/>
+            <div className={"leftSkewedSeparator blueSection"}/>
             <Skills/>
             {/*<Realisations/>*/}
+            <div className={"rightSkewedSeparator purpleSection"}/>
             <SoundRecords/>
             <Videos/>
+            <div className={"leftSkewedSeparator darkSection"}/>
             <Contact/>
     </React.StrictMode>,
     document.getElementById('root')
