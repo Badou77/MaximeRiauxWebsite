@@ -55,21 +55,39 @@ class Videos extends React.Component {
         this.setState({mainVideo: videoId});
     }
 
+    async fetchYoutubeElement(url) {
+        return fetch(url).then(r => r.json());
+    }
+
+
     componentDidMount() {
-        fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=25&playlistId=PLOwYczp-8vSeDRjvQtI4HlVgaXjsR1MZk&key=' + apiKey,
-            {headers: {'Accept': 'application/json'}})
-            .then(response => response.json())
-            .then(data => data.items.map(o => {
-                return {
-                    id: o.contentDetails.videoId,
-                    description: o.snippet.description,
-                    title: o.snippet.title,
-                    image: o.snippet.thumbnails.maxres
-                }
-            }))
+        const playlistURL = (id) => `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=25&playlistId=${id}&key=` + apiKey;
+        const videoURL = (id) => `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${id}&key=` + apiKey;
+
+        Promise.all([
+            this.fetchYoutubeElement(videoURL(["Jh1tizjj-N8", "bmxNS0FURxQ"].join("%2C")),
+                {headers: {'Accept': 'application/json'}}),
+            this.fetchYoutubeElement(playlistURL("PLOwYczp-8vSeDRjvQtI4HlVgaXjsR1MZk"),
+                {headers: {'Accept': 'application/json'}})
+        ])
+            .then(data => {
+                console.log(data);
+                return data ? [].concat.apply([], data.map(o => o.items)) : []
+            })
+            .then(data => {
+                console.log(data);
+                return data ? data.map(o => {
+                    return {
+                        id: o.contentDetails.videoId,
+                        description: o.snippet.description,
+                        title: o.snippet.title,
+                        image: o.snippet.thumbnails.maxres
+                    }
+                }) : []
+            })
             .then(videos => {
                 this.setState({videosFromPlaylist: videos});
-                this.setState({mainVideo: videos[0].id});
+                this.setState({mainVideo: videos.length > 0 && videos[0].id ? videos[0].id : ""});
             });
     }
 
