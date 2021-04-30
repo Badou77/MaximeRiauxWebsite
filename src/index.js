@@ -6,20 +6,21 @@ import Banner from './Banner/Banner';
 import reportWebVitals from './reportWebVitals';
 import Description from "./Description/Description";
 import Skills from "./Skills/Skills";
-import Realisations from "./Realisations/Realisations";
 import Videos from "./Videos/Videos";
 import Contact from "./Contact/Contact";
 import CustomNavbar from "./CustomNavbar";
+import SoundRecords from "./SoundRecords/SoundRecords";
 
 ReactDOM.render(
     <React.StrictMode>
-        <CustomNavbar/>
-        <Banner/>
-        <Description/>
-        <Skills/>
-        <Realisations/>
-        <Videos/>
-        <Contact/>
+            <CustomNavbar/>
+            <Banner/>
+            <Description/>
+            <Skills/>
+            {/*<Realisations/>*/}
+            <SoundRecords/>
+            <Videos/>
+            <Contact/>
     </React.StrictMode>,
     document.getElementById('root')
 );

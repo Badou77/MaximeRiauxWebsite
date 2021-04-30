@@ -1,0 +1,15 @@
+.imagesGallery {
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#sound-records {
+    background: radial-gradient(ellipse at top, #432769, transparent);
+    min-height: 200px;
+}
+
+.title-realisations {
+    -webkit-text-fill-color: aliceblue;
+    margin-bottom: 2rem;
+}
