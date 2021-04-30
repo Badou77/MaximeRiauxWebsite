@@ -5,3 +5,14 @@
 .linkIcons li {
     margin: 1em;
 }
+
+.linkIconContainer {
+    width: fit-content;
+    display: inline-grid;
+}
+
+.reversedImage {
+    transform: rotateX(180deg);
+    margin-top: 2px;
+    opacity: 30%;
+}
