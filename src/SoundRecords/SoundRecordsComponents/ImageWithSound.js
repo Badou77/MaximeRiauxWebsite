@@ -20,6 +20,7 @@ class SoundRecords extends React.Component {
     componentDidMount() {
         // this.audio.autoplay = true;
         this.audio.crossOrigin = 'anonymous';
+        this.audio.preload = 'metadata';
         this.audio.addEventListener('ended', () => this.setState({play: false}));
     }
 

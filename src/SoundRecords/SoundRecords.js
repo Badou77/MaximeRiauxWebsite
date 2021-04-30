@@ -23,12 +23,12 @@ class SoundRecords extends React.Component {
 
                         <ImageWithSound
                             imageSource={"https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"}
-                            audioSource={`http://localhost:3000/ambiances_son/MontagnesVosges.wav`}
+                            audioSource={process.env.PUBLIC_URL + `/ambiances_son/MontagnesVosges.wav`}
                             soundSource={""}/>
 
                         <ImageWithSound
                             imageSource="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
-                            audioSource={`http://localhost:3000/ambiances_son/BorddemerStQuay.wav`}
+                            audioSource={process.env.PUBLIC_URL + `/ambiances_son/BorddemerStQuay.wav`}
                             soundSource={""}
                         />
                     </div>
@@ -36,13 +36,13 @@ class SoundRecords extends React.Component {
                     <div className="col-lg-4 mb-4 mb-lg-0">
                         <ImageWithSound
                             imageSource="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                            audioSource={`http://localhost:3000/ambiances_son/SurlajeteeStQuay.wav`}
+                            audioSource={process.env.PUBLIC_URL + `/ambiances_son/SurlajeteeStQuay.wav`}
                             soundSource={""}
                         />
 
                         <ImageWithSound
                             imageSource="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
-                            audioSource={`http://localhost:3000/ambiances_son/RiviereVosges.wav`}
+                            audioSource={process.env.PUBLIC_URL + `/ambiances_son/RiviereVosges.wav`}
                             soundSource={""}
                         />
                     </div>
