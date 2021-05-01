@@ -24,6 +24,12 @@
     }
 }
 
+@media (max-width: 700px) {
+    .emailAdress h2 {
+        font-size: large;
+    }
+}
+
 .container {
     display: table-cell;
     text-align: center;
