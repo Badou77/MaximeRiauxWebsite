@@ -5,7 +5,7 @@
     height: fit-content;
 }
 
-.formWrapper {
+.emailWrapper {
     margin: 5em;
 
     justify-self: center;
@@ -13,8 +13,14 @@
     max-width: 1000px;
 }
 
+.emailAdress {
+    text-align: center;
+    -webkit-text-fill-color: #4397f4;
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+}
+
 @media (max-width: 767px) {
-    .formWrapper {
+    .emailWrapper {
         margin: 1em;
         min-width: 300px;
     }

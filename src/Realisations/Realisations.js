@@ -10,7 +10,7 @@ function Realisations() {
                 <iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A6anco38F02hxrTtXuU63cW"
                         width="300"
                         height="380" frameBorder="0"
-                        allowTransparency="true" allow="encrypted-media"
+                        allow="encrypted-media"
                         title="Spotify player shin'en"/>
             </div>
         </section>

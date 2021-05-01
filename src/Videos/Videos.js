@@ -71,11 +71,9 @@ class Videos extends React.Component {
                 {headers: {'Accept': 'application/json'}})
         ])
             .then(data => {
-                console.log(data);
                 return data ? [].concat.apply([], data.map(o => o.items)) : []
             })
             .then(data => {
-                console.log(data);
                 return data ? data.map(o => {
                     return {
                         id: o.contentDetails.videoId ? o.contentDetails.videoId : o.id,
@@ -103,6 +101,7 @@ class Videos extends React.Component {
                     <Carousel responsive={responsive} className="video-list">
                         {this.state.videosFromPlaylist.map(video => (
                             <div
+                                key={video.id + "div"}
                                 className="fill-available"
                                 data-ripple-color="light"
                             >

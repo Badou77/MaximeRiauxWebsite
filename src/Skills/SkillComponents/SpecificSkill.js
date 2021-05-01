@@ -7,7 +7,7 @@ function Description({iconURL, title, description, descriptionList}) {
         list = <ul>
             {
                 descriptionList.map((item) => {
-                        return <li>{item}</li>
+                        return <li key={title + item}>{item}</li>
                     }
                 )
             }
@@ -25,13 +25,13 @@ function Description({iconURL, title, description, descriptionList}) {
         <div className="skillDescription">
             <h2 className="skillTitle">{title}</h2>
             <hr align="center"/>
-            <p>
+            <span>
                 <strong>
                     {description}
                 </strong>
                 <br/><br/>
                 {list}
-            </p>
+            </span>
         </div>
     </div>;
 }

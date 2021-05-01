@@ -56,6 +56,7 @@ function Description() {
     const skillsList = skills.map((skill) => {
         return <SpecificSkill iconURL={skill.iconURL}
                               title={skill.title}
+                              key={skill.title}
                               description={skill.description}
                               descriptionList={skill.descriptionList}/>
     })
