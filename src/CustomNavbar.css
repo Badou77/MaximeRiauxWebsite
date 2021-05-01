@@ -1,3 +1,25 @@
 .color-nav {
     background-color: #052026fa;
 }
+
+.m-auto .nav-link {
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.websiteName {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    .m-auto .nav-link {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+
+@media (max-width: 992px) {
+    .websiteName {
+        display: block;
+    }
+}
