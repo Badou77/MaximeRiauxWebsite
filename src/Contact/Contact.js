@@ -7,9 +7,9 @@ class Contact extends React.Component {
             <section id="contact" className="fpage">
                 <h2 className="sectionTitle">Contact</h2>
 
-                <div className="emailWrapper neons">
+                <div className="emailWrapper">
                     <a href="mailto:badmaskleterrible@gmail.com" className={"emailAdress"}>
-                        <h2>badmaskleterrible@gmail.com</h2>
+                        <h2 className={"neon"}>badmaskleterrible@gmail.com</h2>
                     </a>
                 </div>
             </section>
