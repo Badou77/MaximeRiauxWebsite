@@ -51,7 +51,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .container {
         flex-direction: column-reverse;
 
@@ -67,8 +67,10 @@
         padding-left: 1em;
         margin-left: 0;
     }
-}
 
-.imageCol img {
-    /*min-width: 200px;*/
+    .imageCol img {
+        max-width: 600px;
+        width: 100%;
+        align-self: center;
+    }
 }
