@@ -8,8 +8,8 @@ class Contact extends React.Component {
                 <h2 className="sectionTitle">Contact</h2>
 
                 <div className="emailWrapper">
-                    <a href="mailto:badmaskleterrible@gmail.com" className={"emailAdress"}>
-                        <h2 className={"neon"}>badmaskleterrible@gmail.com</h2>
+                    <a href="mailto:maxime.riaux77@laposte.net" className={"emailAdress"}>
+                        <h2 className={"neon"}>maxime.riaux77@laposte.net</h2>
                     </a>
                 </div>
             </section>
