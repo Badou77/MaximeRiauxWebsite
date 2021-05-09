@@ -26,6 +26,7 @@
     align-content: center;
     flex-direction: column;
     margin-left: 14%;
+    align-items: center;
 }
 
 .textCol {
@@ -37,6 +38,10 @@
     max-width: 1000px;
     opacity: .9;
 
+}
+
+.imageCol img {
+    width: 100%;
 }
 
 @media (max-width: 1250px) {
@@ -71,6 +76,5 @@
     .imageCol img {
         max-width: 600px;
         width: 100%;
-        align-self: center;
     }
 }
