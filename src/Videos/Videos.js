@@ -65,10 +65,12 @@ class Videos extends React.Component {
         const videoURL = (id) => `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${id}&key=` + apiKey;
 
         Promise.all([
-            this.fetchYoutubeElement(videoURL(["Jh1tizjj-N8", "bmxNS0FURxQ"].join("%2C")),
+            this.fetchYoutubeElement(videoURL(["Jh1tizjj-N8"].join("%2C")),
                 {headers: {'Accept': 'application/json'}}),
             this.fetchYoutubeElement(playlistURL("PLOwYczp-8vSeDRjvQtI4HlVgaXjsR1MZk"),
-                {headers: {'Accept': 'application/json'}})
+                {headers: {'Accept': 'application/json'}}),
+            this.fetchYoutubeElement(videoURL(["bmxNS0FURxQ"].join("%2C")),
+                {headers: {'Accept': 'application/json'}}),
         ])
             .then(data => {
                 return data ? [].concat.apply([], data.map(o => o.items)) : []
