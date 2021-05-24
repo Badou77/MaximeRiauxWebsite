@@ -87,7 +87,7 @@ class VideoCarousel extends React.Component {
                         id: o.contentDetails.videoId ? o.contentDetails.videoId : o.id,
                         description: o.snippet.description,
                         title: o.snippet.title,
-                        image: o.snippet.thumbnails.maxres
+                        image: o.snippet.thumbnails.maxres ? o.snippet.thumbnails.maxres : o.snippet.thumbnails.medium
                     }
                 }) : []
             })
